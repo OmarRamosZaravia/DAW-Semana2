@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    background-color: lightblue;
+    height: 50px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+.menu, .main-content, .sidebar {
+    height: 300px;
+}
+.menu {
+    background-color: lightgreen;
+    flex: 1;
+}
+.main-content {
+    background-color: lightpink;
+    flex: 2;
+}
+.sidebar {
+    background-color: lightyellow;
+    flex: 1;
+}
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    .menu, .main-content, .sidebar {
+        height: auto;
+        flex-basis: 100%;
+    }
+}
+
+
+header, .menu, .main-content, .sidebar, footer {
+    text-align: center; 
+    font-size: 24px;  
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+
+.menu, .main-content, .sidebar {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+
+
+.menu, .main-content, .sidebar {
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+}
+
+
+.menu, .main-content, .sidebar {
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+}
+
+
+.menu, .main-content, .sidebar {
+    
+    color: blue; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+
+.menu, .main-content, .sidebar {
+    font-weight: bold; 
+}
+
+
+

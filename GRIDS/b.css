@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "menu"
+        "main-content"
+        "sidebar"
+        "footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+header, footer {
+    background-color: lightblue;
+    height: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "menu main-content sidebar";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+.menu, .main-content, .sidebar {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-areas:
+            "header"
+            "menu"
+            "main-content"
+            "sidebar"
+    }
+}
+
+
+header, .menu, .main-content, .sidebar, footer {
+    text-align: center; 
+    font-size: 24px;  
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+
+.menu, .main-content, .sidebar {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+
+
+
+
+
+
+
+

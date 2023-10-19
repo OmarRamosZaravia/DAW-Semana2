@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: lightblue;
+    height: 50px;
+    clear: both;
+}
+main {
+    overflow: hidden;
+}
+.menu, .main-content, .sidebar {
+    height: 300px;
+}
+.menu {
+    background-color: lightgreen;
+    width: 25%;
+    float: left;
+}
+.main-content {
+    background-color: lightpink;
+    width: 50%;
+    float: left;
+}
+.sidebar {
+    background-color: lightyellow;
+    width: 25%;
+    float: left;
+}
+@media (max-width: 600px) {
+    .menu, .main-content, .sidebar {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+}
+
+
+
+header, .menu, .main-content, .sidebar, footer {
+    text-align: center; 
+    font-size: 24px;  
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+
+.menu, .main-content, .sidebar {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+
+
+
+
+
